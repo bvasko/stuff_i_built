@@ -1,70 +1,121 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" type="text/css" href="./styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
-  </head>
-  <body>
-    <header>
-      <div class="title-wrapper">
-       <h1 class="title">B. Dipasquale</h1>
-      </div>
-      <nav>
-        <ul>
-          <!-- 
+<head>
+  <meta charset="UTF-8">
+  <title>Coming Soon</title>
+  <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="title-wrapper">
+      <h1 class="title">B. Dipasquale</h1>
+    </div>
+    <nav>
+      <ul>
+        <!-- 
             Remove whitespace 
             - display: inline renders as text so whitespace between elements is respected 
           -->
-          <li>About Me</li>
-          <li>Work</li>
-          <li>Contact Me</li>
-          <li>Resume</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!--
-      <aside>
-        <nav>
-          <ul>
-            <li>FRONTEND</li>
-            <li>BACKEND</li>
-            <li>OTHER</li>
-          </ul>
-        </nav>
-      </aside>
-      -->
-      <section>
-        <article>
-          <h3>About me</h3>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis dui non tellus accumsan, eu ultrices ligula scelerisque. In sollicitudin augue vel erat ornare bibendum. Praesent et magna bibendum, viverra velit a, euismod metus. Vestibulum lobortis eu odio finibus rhoncus. Nulla facilisi. Nulla tristique facilisis aliquet. Ut a sodales dolor, ac ultricies nisi. Donec viverra vestibulum enim a hendrerit. Sed sed neque neque. Integer sit amet tincidunt velit. Duis mattis euismod auctor. Integer aliquet ante nec hendrerit dictum. Etiam eros augue, interdum tristique nibh vitae, facilisis ornare ligula.
-
-          </p>
-        </article>
-        <article>
-          <h3>Contact Me</h3>
-          
-          <fieldset>
-            <label for="name">Name</label><input id="name" type="text" /></fieldset>
-            <fieldset>
-            <label for="email">email</label><input id="email" type="text" /></fieldset>
-            <input type="button" name="submit" value="Submit"/>
-          </fieldset>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <ul>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Github</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#resume">Resume</a></li>
       </ul>
-    </footer>
-  </body>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <article class="two-col">
+        <div id="about" class="section-heading">
+          <h2>About me</h2>
+        </div>
+        <div class="content">
+          <p>
+            <img class="photo-wrapper" src="./images/face.jpg">
+            
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis dui non tellus accumsan, eu
+            ultrices ligula scelerisque. In sollicitudin augue vel erat ornare bibendum. Praesent et magna bibendum,
+            viverra velit a, euismod metus. Vestibulum lobortis eu odio finibus rhoncus. Nulla facilisi. Nulla tristique
+            facilisis aliquet. Ut a sodales dolor, ac ultricies nisi. Donec viverra vestibulum enim a hendrerit. Sed sed
+            neque neque. Integer sit amet tincidunt velit. Duis mattis euismod auctor. Integer aliquet ante nec
+            hendrerit dictum. Etiam eros augue, interdum tristique nibh vitae, facilisis ornare ligula.
+          </p>
+          
+        </div>
+        </div>
+      </article>
+    </section>
+    <section class="two-col">
+      <div id="work" class="section-heading">
+        <h2>Work</h2>
+      </div>
+      <div class="work-wrapper">
 
-  </html>
-  
+        <figure class="banner">
+          <caption>
+            <h3>Weather Station</h3>
+            <h4>MERN Stack</h4>
+          </caption>
+        </figure>
+        <figure class="card">
+          <img src="images/flower.jpeg" />
+          <caption>
+            <h3>Garage Door</h3>
+            <h4>Node/IoT</h4>
+          </caption>
+        </figure>
+        <figure class="card">
+          <img src="images/storm.jpeg" />
+          <caption>
+            <h3>Chart Themer</h3>
+            <h4>React/JS/CSS</h4>
+          </caption>
+        </figure>
+        <figure class="card">
+          <img src="images/led.jpeg" />
+          <caption>
+            <h3>JS Jigsaw</h3>
+            <h4>MERN Stack</h4>
+          </caption>
+        </figure>
+        <figure class="card">
+          <img src="images/water.jpeg" />
+          <caption>
+            <h3>Running Stats</h3>
+            <h4>HTML/CSS</h4>
+          </caption>
+        </figure>
+      </div>
+    </section>
+    <section>
+      <article class="two-col">
+        <div class="section-heading">
+          <h2>Contact Me</h2>
+        </div>
+        <fieldset>
+          <label for="name">Name</label><input id="name" type="text" />
+        </fieldset>
+        <fieldset>
+          <label for="email">email</label><input id="email" type="text" />
+        </fieldset>
+        <input type="button" name="submit" value="Submit" />
+        </fieldset>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">Github</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
