@@ -2,7 +2,7 @@
 - developer's name, 
 - a recent photo or avatar, 
 - links to sections about them, 
-- linnks ti their work, 
+- links to their work, 
 - link to contact them
 
 - clicking on a link scrolls to the correct section
