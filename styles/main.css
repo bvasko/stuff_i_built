@@ -47,9 +47,9 @@ header {
 }
 
 header .title-wrapper {
+  margin-left: 10px;
   position: relative;
   top: 30px;
-  margin-left: 10px;
 }
 
 h1 {
@@ -78,6 +78,7 @@ header nav {
 }
 
 header nav ul {
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -107,8 +108,8 @@ header nav ul li a {
   color: inherit;
   line-height: 35px;
 }
-header nav ul li a:hover {
-  scale: 350%;
+header nav ul li:hover {
+  scale: 110%;
 }
 .header {
   width: 20%;
@@ -125,6 +126,7 @@ section {
   width: 100%;
   padding: 8px 0 32px 0;
 }
+
 main section:last-child {
   padding-bottom: 180px;
 }
@@ -153,6 +155,7 @@ article p {
     display: block;
     width: 70%;
     margin-left: 32px;
+    text-align: justify;
 }
 
 .navy-blue {
@@ -175,6 +178,8 @@ article#contact {
   float: right;
   width: 201px;
   clip-path: circle(100px at center);
+  margin-top: -32px;
+  margin-left: 22px;
 }
 
 
@@ -278,4 +283,45 @@ footer ul li a {
 footer ul li a:hover {
   text-decoration: underline;
   color: #f6d745;
+}
+
+@media (max-width: 550px) {
+  /* Phones */
+  .two-col {
+    display: block;
+  }
+  header {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  main {
+    padding: 20px 0 0 20px;
+  }
+  .title-wrapper {
+    min-width: 100%;
+    top: 24px;
+  }
+  h1 {
+    transform: rotate(0deg);
+    top: 10px;
+  }
+  header nav {
+    min-width: 100%;
+    display: block;
+    top: 90px;
+  }
+  header nav ul li {
+    margin: 0px;
+  }
+  .section-heading {
+    min-width: 100%;
+    border-right: none;
+  }
+  h2 {
+    display: block;
+    text-align: left;
+  }
+  figure.card {
+    width: 100%;
+  }
 }
