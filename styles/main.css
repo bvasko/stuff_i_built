@@ -254,9 +254,21 @@ figure.card {
   margin-top: 12px;
 }
 
+#contact a {
+  text-decoration: none;
+  color: rgb(56, 150, 98);
+  display: block;
+  padding: 18px;
+  border: 1px solid #ccc;
+  margin-right: 24px;
+  border-radius: 8px;
+}
+#contact a:hover {
+  color: #FFF;
+  background-color: rgb(9, 63, 143);
+}
+
 /* Footer Styles */
-
-
 footer {
   position: fixed;
   width: 100%;
@@ -324,4 +336,5 @@ footer ul li a:hover {
   figure.card {
     width: 100%;
   }
+  
 }
