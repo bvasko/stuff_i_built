@@ -12,8 +12,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Bebas Neue', cursive;
+  /* font-size: 16px; */
 }
 
 
@@ -53,7 +53,7 @@ header .title-wrapper {
 }
 
 h1 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Bebas Neue', cursive;
   text-shadow: 2px 2px 2px rgb(81 57 84);
   font-size: 1.9em;
   width: 225px;
@@ -68,7 +68,7 @@ header img {
 }
 
 h2 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Bebas Neue', cursive;
 }
 
 header nav {
@@ -84,8 +84,8 @@ header nav ul {
 
 header nav ul li {
   display: inline-block;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 1.3rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.3rem;
   margin-right: 24px;
   background-color: rgb(255 255 255);
   border-radius: 12px;
@@ -106,7 +106,6 @@ header nav ul li a {
   position: relative;
   text-decoration: none;
   color: inherit;
-  line-height: 35px;
 }
 header nav ul li:hover {
   scale: 110%;
@@ -153,9 +152,11 @@ main section:last-child {
 
 article p {
     display: block;
-    width: 70%;
+    width: 100%;
     margin-left: 32px;
     text-align: justify;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
 }
 
 .navy-blue {
@@ -176,9 +177,9 @@ article#contact {
   background-image: url('../images/face.jpg');
   background-position: top;
   float: right;
-  width: 201px;
-  clip-path: circle(100px at center);
-  margin-top: -32px;
+  width: 100px;
+  clip-path: circle(50px at center);
+  margin-top: -2px;
   margin-left: 22px;
 }
 
@@ -206,17 +207,19 @@ label {
 figure {
   border: var(--border-width) solid var(--dark-purple);
   margin: 0px;
+  cursor: pointer;
 }
 
 figure.banner {
-  background-image: url('../images/geode.jpeg');
+  background-image: linear-gradient(90deg, #420a68, #6a176e, #932667, #ba3655, #dd513a, #f3761b, #fca50a, #f6d746, #f6d746), url('../images/weather_dashboard.png');
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   border: var(--border-width) solid var(--dark-purple);
   border-radius: 8px;
-  min-height: 200px;
+  min-height: 430px;
   position: relative;
   width: 100%;
+  background-blend-mode: color;
 }
 
 figure.card {
@@ -234,24 +237,18 @@ figure.card {
   color: #fff;
   display: block;
   font-family: Arial, Helvetica, sans-serif;
-  width: fit-content;
-  padding: 4px 10px;
+  padding: 0px 4px 10px;
   text-align: center;
-  position: absolute;
-  border-radius: 0px 5px 18px 0px;
   box-shadow: 0 10px 6px -6px #2b1236ad;
 }
 
 .work-wrapper figure h3 {
-  top: 4rem;
   font-size: 1.8rem;
   margin-top: 0px;
 }
 
 .work-wrapper figure h4 {
-  top: 6.6rem;
   font-size: 1rem;
-  margin-top: 12px;
 }
 
 #contact a {
@@ -262,6 +259,7 @@ figure.card {
   border: 1px solid #ccc;
   margin-right: 24px;
   border-radius: 8px;
+  font-size: 1.8rem;
 }
 #contact a:hover {
   color: #FFF;
@@ -290,6 +288,7 @@ footer ul li a {
   text-decoration: none;
   display: inline-table;
   padding: 3px 18px;
+  font-size: 1.8rem;
 }
 
 footer ul li a:hover {
