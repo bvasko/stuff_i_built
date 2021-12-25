@@ -1,8 +1,10 @@
 const fig = document.getElementsByTagName("figure");
-fig.forEach((el) => {
-  console.log('click', el)
-  el.addEventHandler("click", (evt) => {
+console.log(fig.length)
+for (let i = 0; i < fig.length; i++) {
+  const el = fig[i];
+  console.log('click', el.dataset.link);
+  el.addEventListener("click", (evt) => {
     console.log('click', evt)
-    window.open("", "_blank");
+    window.open(el.dataset.link, "_blank");
   });
-});
+}
