@@ -49,7 +49,7 @@ header {
 header .title-wrapper {
   margin-left: 10px;
   position: relative;
-  top: 30px;
+  top: 21px;
 }
 
 h1 {
@@ -85,30 +85,32 @@ header nav ul {
 header nav ul li {
   display: inline-block;
   font-family: 'Bebas Neue', cursive;
-  font-size: 2.3rem;
+  font-size: 1.6rem;
   margin-right: 24px;
   background-color: rgb(255 255 255);
   border-radius: 12px;
   border: solid 2px #4b0e69;
   padding: 4px 21px 4px 21px;
   position: relative;
-  transition: all .3s ease-out;
+  transition: all .2s ease-out;
 }
 
 
 header nav ul li:hover {
   box-shadow: 0px 6px 11px 0px rgb(149 52 14 / 56%);
-  transform: rotate(3deg);
+  transform: rotate(2deg);
 }
 
 header nav ul li a {
   display: inline-block;
   position: relative;
   text-decoration: none;
-  color: inherit;
+  color: #c63f4c;
 }
-header nav ul li:hover {
-  scale: 110%;
+header nav ul li:hover a{
+  scale: 105%;
+  color: #58116b;
+  transition: all .4s;
 }
 .header {
   width: 20%;
@@ -157,6 +159,24 @@ article p {
     text-align: justify;
     font-family: 'Mulish', sans-serif;
     font-size: 1.6rem;
+}
+article p#about .other {
+  opacity: 0;
+}
+article p#about:hover {
+  border-radius: 12px;
+  transition: all .6s;
+  background-color: rgb(247, 247, 160);
+}
+
+article p#about:hover .other {
+  transition: all 1s;
+  opacity: 1;
+}
+
+article p .other {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.2rem;
 }
 
 .navy-blue {
@@ -211,7 +231,8 @@ figure {
 }
 
 figure.banner {
-  background-image: linear-gradient(90deg, #420a68, #6a176e, #932667, #ba3655, #dd513a, #f3761b, #fca50a, #f6d746, #f6d746), url('../images/weather_dashboard.png');
+  background-image: none, url('../images/weather_dashboard.png');
+  background-blend-mode:normal;
   background-position: center;
   background-size: contain;
   border: var(--border-width) solid var(--dark-purple);
@@ -219,14 +240,20 @@ figure.banner {
   min-height: 430px;
   position: relative;
   width: 100%;
+  
+}
+
+figure.banner:hover {
+  background-image: linear-gradient(90deg, #420a68, #6a176e, #932667, #ba3655, #dd513a, #f3761b, #fca50a, #f6d746, #f6d746), url('../images/weather_dashboard.png');
   background-blend-mode: color;
+  transition: all 0.6s ease;
 }
 
 figure.card {
   width: 49%;
   border-radius: 8px;
   position: relative;
-  min-height: 200px;
+  min-height: 225px;
   margin-top: 18px;
   max-height: 180px;
   overflow: hidden;
